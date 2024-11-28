@@ -1,0 +1,146 @@
+/* General Body Styling */
+body {
+    font-family: 'IM Fell English', serif;
+    background: linear-gradient(to bottom, #9ec9d9, #e4eff5);
+    color: #344e5c;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(to right, #accfe6, #d5e9f8);
+    color: #e4aa57;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 2.5rem;
+    border-bottom: 5px solid #2f6d91;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 5px #315a70;
+}
+
+/* Main Content Area */
+main {
+    max-width: 850px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #77a2c0;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(50, 108, 130, 0.4);
+    text-align: center;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #315a70;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+a:hover {
+    color: #e4aa57;
+    text-shadow: 0 0 5px #e4aa57;
+}
+
+/* Button Styling */
+button {
+    background: #315a70;
+    color: #f8f8f8;
+    font-size: 1rem;
+    border: 2px solid #e4aa57;
+    padding: 0.7rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px #2c4c5b;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+    background: #e4aa57;
+    transform: translateY(-2px);
+    box-shadow: 0 2px #d9974a;
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 0px #d9974a;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #344e5c;
+    background: linear-gradient(to bottom, #e4eff5, #9ec9d9);
+    padding: 1rem;
+    border-top: 2px solid #315a70;
+}
+
+footer a {
+    color: #315a70;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #e4aa57;
+}
+
+/* Initially hide the message */
+.hidden-message {
+    display: none; /* Message is hidden */
+    color: #d9534f; /* Optional: Make the text red when visible */
+    font-style: italic;
+    margin-top: 1rem;
+    transition: opacity 0.5s ease-in-out; /* Smooth reveal effect */
+}
+
+.hidden-message.visible {
+    display: block; /* Show the message */
+    opacity: 1; /* Smooth fade-in */
+}
+.hidden-message.visible {
+    text-shadow: 0 0 10px #d9534f, 0 0 20px #d9534f;
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #d9534f, 0 0 20px #d9534f;
+    }
+    to {
+        text-shadow: 0 0 20px #f36c6c, 0 0 40px #f36c6c;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduce font size */
+        padding: 10px;   /* Add padding for smaller screens */
+    }
+
+    main {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* Adjust header size */
+    }
+
+    button {
+        font-size: 0.9rem; /* Smaller buttons */
+        padding: 0.5rem 1rem;
+    }
+}

@@ -1,0 +1,164 @@
+/* General Body Styling */
+body {
+    font-family: 'IM Fell English', serif;
+    background: radial-gradient(circle at center, #430d0d, #1e0000);
+    color: #e8d5d5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(to right, #700505, #420303);
+    color: #f2a92c;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 0 0 8px #8c290a, 0 0 15px #f2a92c;
+}
+
+header h1 {
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* Main Content Area */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #a12424;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(128, 26, 26, 0.9);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #f2a92c;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+a:hover {
+    color: #d94e1f;
+    text-shadow: 0 0 10px #d94e1f;
+}
+
+/* Disarm Button */
+#disarm-button {
+    background: linear-gradient(to bottom, #8c290a, #6d2000);
+    color: #fff;
+    font-size: 1.2rem;
+    border: 2px solid #f4a02c;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px #521400;
+    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#disarm-button:hover {
+    background: #f4a02c;
+    color: #8c290a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px #6d2000;
+}
+
+#disarm-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px #6d2000;
+}
+/* Treasure Link Styling */
+.treasure-link {
+    display: inline-block;
+    background: linear-gradient(to bottom, #f4c85a, #d89b39);
+    color: #523c04;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.7rem 1.5rem;
+    border: 2px solid #cc950d;
+    border-radius: 10px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px #b8860b;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.treasure-link:hover {
+    background: linear-gradient(to bottom, #ffe373, #d89b39);
+    transform: translateY(-2px);
+    box-shadow: 0 8px #b8860b;
+}
+
+.treasure-link:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px #
+
+/* Outcome Text */
+.outcome {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f4a02c;
+    text-shadow: 0 0 10px #f4a02c;
+}
+
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #e8d5d5;
+    background: linear-gradient(to bottom, #420303, #700505);
+    padding: 1rem;
+    border-top: 2px solid #8c290a;
+}
+
+footer a {
+    color: #f2a92c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #d94e1f;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduce font size */
+        padding: 10px;   /* Add padding for smaller screens */
+    }
+
+    main {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* Adjust header size */
+    }
+
+    button {
+        font-size: 0.9rem; /* Smaller buttons */
+        padding: 0.5rem 1rem;
+    }
+}

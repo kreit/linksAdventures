@@ -1,0 +1,143 @@
+/* General Body Styling */
+body {
+    font-family: 'IM Fell English', serif;
+    background: linear-gradient(to bottom, #fdf3c4, #f9e4a5);
+    color: #523c04;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(to right, #f9e4a5, #f4c85a);
+    color: #d17d0f;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 2.5rem;
+    border-bottom: 5px solid #cc950d;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 8px #b8860b;
+}
+
+/* Main Content Area */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #f4c85a;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(245, 195, 85, 0.7);
+    text-align: center;
+    animation: sparkle 2s infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(245, 195, 85, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(245, 195, 85, 1);
+    }
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #d17d0f;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+a:hover {
+    color: #cc950d;
+    text-shadow: 0 0 10px #cc950d;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #523c04;
+    background: linear-gradient(to bottom, #f4c85a, #f9e4a5);
+    padding: 1rem;
+    border-top: 2px solid #cc950d;
+}
+
+footer a {
+    color: #d17d0f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #cc950d;
+}
+/* Treasure Button */
+#treasure-button {
+    background: linear-gradient(to bottom, #f4c85a, #d89b39);
+    color: #523c04;
+    border: 3px solid #cc950d;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px #b8860b;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+#treasure-button:hover {
+    background: linear-gradient(to bottom, #ffe373, #d89b39);
+    transform: translateY(-2px);
+    box-shadow: 0 8px #b8860b;
+}
+
+#treasure-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px #8e6e29;
+}
+
+/* Add a glowing effect */
+#treasure-button.glowing {
+    animation: treasure-glow 1s infinite alternate;
+}
+
+@keyframes treasure-glow {
+    from {
+        box-shadow: 0 0 15px #f4c85a, 0 0 30px #f4c85a;
+    }
+    to {
+        box-shadow: 0 0 25px #fddc85, 0 0 50px #fddc85;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduce font size */
+        padding: 10px;   /* Add padding for smaller screens */
+    }
+
+    main {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* Adjust header size */
+    }
+
+    button {
+        font-size: 0.9rem; /* Smaller buttons */
+        padding: 0.5rem 1rem;
+    }
+}
